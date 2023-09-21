@@ -44,15 +44,15 @@ void HParser::AllHeaderFrom(const char* path, std::vector<int> lastLineAt, int r
                     caseTab = "    \xe2\x94\x9c\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80"; // "    ├───"
 
 
-                std::cout << tab<< caseTab <<"Folder: " << entry.path().filename().c_str() << std::endl;
+                std::cout << tab<< caseTab <<"Folder: " << entry.path().filename().string().c_str() << std::endl;
                 
                 if(entry == lastEntry)
                 {
                     lastLineAt.push_back(recurrence);
-                    AllHeaderFrom(entry.path().c_str(), lastLineAt, recurrence + 1, true, (recurrence == 0));
+                    AllHeaderFrom(entry.path().string().c_str(), lastLineAt, recurrence + 1, true, (recurrence == 0));
                 }
                 else
-                    AllHeaderFrom(entry.path().c_str(), lastLineAt, recurrence + 1, false);
+                    AllHeaderFrom(entry.path().string().c_str(), lastLineAt, recurrence + 1, false);
             }
             else
             {

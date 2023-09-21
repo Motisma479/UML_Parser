@@ -10,16 +10,12 @@ else()
     add_compile_definitions(DEBUG=0)
 endif()
 
-add_compile_definitions(WINDOWS=0)
-add_compile_definitions(MACOS=1)
-add_compile_definitions(LINUX=2)
-
 if (WIN32)
-    add_compile_definitions(PLATFORM=0)
+    add_compile_definitions(WINDOWS)
 elseif (APPLE)
-    add_compile_definitions(PLATFORM=1)
+    add_compile_definitions(MACOS)
 else()
-    add_compile_definitions(PLATFORM=2)
+    add_compile_definitions(LINUX)
 endif()
 
 set(SOURCES

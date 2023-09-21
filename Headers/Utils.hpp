@@ -3,7 +3,7 @@
 #include<iostream>
 #include<vector>
 
-#if PLATFORM == WINDOWS
+#ifdef WINDOWS
 
 #include<Windows.h>
 #include<conio.h>
@@ -16,11 +16,11 @@
 } ()
 
 #define PAUSE [] () -> void {\
-    std::cout << "Press any key to continue...";
+    std::cout << "Press any key to continue...";\
     _getch();\
 } ()
 
-#elif PLATFORM == LINUX
+#elif LINUX
 
 #include<unistd.h>
 #include <termios.h>
