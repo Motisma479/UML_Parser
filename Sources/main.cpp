@@ -12,6 +12,6 @@ int main(int argc, char** argv)
     std::cout << "------------------------------------------------------------\n";
     std::cout << EXECUTION_PATH << std::endl;
     std::cout << "------------------------------------------------------------\n";
-    system("pause");
+    PAUSE;
     return 0;
 }
