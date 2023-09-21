@@ -25,6 +25,7 @@ endif()
 set(SOURCES
 
 "Sources/main.cpp"
+"Sources/HParser.cpp"
 )
 
 include_directories ("Headers")
