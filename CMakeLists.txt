@@ -22,7 +22,7 @@ set(SOURCES
 
 "Sources/main.cpp"
 "Sources/HParser.cpp"
-)
+ "Sources/Color.cpp")
 
 include_directories ("Headers")
 

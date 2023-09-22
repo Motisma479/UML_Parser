@@ -3,6 +3,8 @@
 #include<iostream>
 #include<vector>
 
+#include "Type.hpp"
+
 #ifdef WINDOWS
 
 #include<Windows.h>
@@ -33,9 +35,9 @@
 
 #define PAUSE [] () -> void {\
     std::cout << "Press any key to continue...";\
-    auto getch = [] () -> int {\
+    auto getch = [] () -> s32 {\
         struct termios oldt, newt;\
-        int ch;\
+        s32 ch;\
         tcgetattr(STDIN_FILENO, &oldt);\
         newt = oldt;\
         newt.c_lflag &= ~(ICANON | ECHO);\

@@ -1,6 +1,5 @@
 #pragma once
 #include"Utils.hpp"
-#include<vector>
 #include<filesystem>
 
 enum class Visibility 
@@ -45,5 +44,5 @@ public:
     HParser() {}
     ~HParser() {}
 
-    void AllHeaderFrom(const char* path, std::vector<int> lastLineAt= {}, int recurrence = 0, bool last = false, bool isFinal = false);
+    void AllHeaderFrom(const char* path, std::vector<s32> lastLineAt= {}, s32 recurrence = 0);
 };

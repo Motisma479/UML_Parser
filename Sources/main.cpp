@@ -1,7 +1,7 @@
 #include"Utils.hpp"
 #include"HParser.hpp"
 
-int main(int argc, char** argv)
+s32 main(s32 argc, char** argv)
 {
 #ifdef WINDOWS
     std::system("chcp 65001");
