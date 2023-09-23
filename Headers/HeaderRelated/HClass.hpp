@@ -4,12 +4,21 @@
 class HClass
 {
 public:
-    HClass() {}
+    HClass() = delete;
+    HClass(std::string _name);
     ~HClass() {}
 
+    std::string name;
+
     std::vector<HElement> variables;
+    std::vector<HElement> consDesTructor;
     std::vector<HElement> functions;
 
-    void CreateVariables() {}
-    void CreateFunction() {}
+    std::vector<std::string> aggregation;
+    std::vector<std::string> composition;
+    std::vector<std::string> inheritance;
+
+    void CreateVariables();
+    void CreateConsDesTructor();
+    void CreateFunction();
 };
