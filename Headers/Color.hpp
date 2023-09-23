@@ -1,9 +1,8 @@
 #pragma once
 
-#include "Type.hpp"
+#include "stdafx.hpp"
 
 #include <array>
-#include <string>
 
 struct Color
 {

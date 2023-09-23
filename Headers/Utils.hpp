@@ -1,9 +1,5 @@
 #pragma once
-
-#include<iostream>
-#include<vector>
-
-#include "Type.hpp"
+#include "stdafx.hpp"
 
 #ifdef WINDOWS
 

@@ -1,5 +1,5 @@
 #include"Utils.hpp"
-#include"HParser.hpp"
+#include"HeaderRelated/HParser.hpp"
 
 s32 main(s32 argc, char** argv)
 {
@@ -15,7 +15,12 @@ s32 main(s32 argc, char** argv)
     std::cout << "Hello World!\n";
     std::cout << "argc : " << argc << std::endl;
 
-    parser.AllHeaderFrom(EXECUTION_PATH);
+    parser.AllHeadersFrom(EXECUTION_PATH);
+    parser.ParseRegisterdHeaders();
+
+#if DEBUG
+    parser.PrintRegisteredHeaders();
+#endif
 
     //PAUSE;
     return 0;

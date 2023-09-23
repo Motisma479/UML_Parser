@@ -21,9 +21,16 @@ endif()
 set(SOURCES
 
 "Sources/main.cpp"
-"Sources/HParser.cpp"
- "Sources/Color.cpp")
+"Sources/stdafx.cpp"
+"Sources/Color.cpp"
+"Sources/HeaderRelated/HParser.cpp"
+"Sources/HeaderRelated/HFile.cpp"
+"Sources/HeaderRelated/HClass.cpp"
+
+)
 
 include_directories ("Headers")
 
 add_executable (${PROJECT_NAME} ${SOURCES})
+
+target_precompile_headers(${PROJECT_NAME} PRIVATE "Headers/stdafx.hpp")
