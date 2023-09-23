@@ -4,3 +4,8 @@ HFile::HFile(std::string _name, std::string _path, std::vector<std::string> _lis
 {
 
 }
+
+void HFile::Parse()
+{
+
+}

@@ -11,4 +11,8 @@ public:
     std::string name;
     std::string path;
     std::vector<std::string> listOfFolder;
+
+    std::vector<HClass> containedClass;
+
+    void Parse();
 };
