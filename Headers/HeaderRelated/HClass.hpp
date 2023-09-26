@@ -1,4 +1,4 @@
-#pragma onces
+#pragma once
 #include "HeaderRelated/HElement.hpp"
 
 class HClass
