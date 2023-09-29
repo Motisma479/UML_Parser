@@ -79,9 +79,10 @@ void HParser::AllHeadersFrom(const char* path, std::vector<s32> lastLineAt, s32 
         std::cerr << "The specified path is not a valid directory." << std::endl;
 }
 
-void HParser::ParseRegisterdHeaders()
+void HParser::ParseRegisteredHeaders()
 {
-    
+    for(HFile file : files)
+        file.Parse();
 }
 
 #if DEBUG

@@ -10,7 +10,7 @@ public:
     std::vector<HFile> files;
 
     void AllHeadersFrom(const char* path, std::vector<s32> lastLineAt= {}, s32 recurrence = 0);
-    void ParseRegisterdHeaders();
+    void ParseRegisteredHeaders();
 
 #if DEBUG
     void PrintRegisteredHeaders();

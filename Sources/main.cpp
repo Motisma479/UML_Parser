@@ -16,7 +16,7 @@ s32 main(s32 argc, char** argv)
     std::cout << "argc : " << argc << std::endl;
 
     parser.AllHeadersFrom(EXECUTION_PATH);
-    parser.ParseRegisterdHeaders();
+    parser.ParseRegisteredHeaders();
 
 #if DEBUG
     parser.PrintRegisteredHeaders();
